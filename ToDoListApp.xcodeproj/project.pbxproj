@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E45CF7EA2AC9ECAD00268AE6 /* TLButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = E45CF7E92AC9ECAD00268AE6 /* TLButton.swift */; };
 		E462BCAC2AC4BE3C00C9BA70 /* ToDoListAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E462BCAB2AC4BE3C00C9BA70 /* ToDoListAppApp.swift */; };
 		E462BCAE2AC4BE3C00C9BA70 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E462BCAD2AC4BE3C00C9BA70 /* MainView.swift */; };
 		E462BCB02AC4BE3D00C9BA70 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E462BCAF2AC4BE3D00C9BA70 /* Assets.xcassets */; };
@@ -33,6 +34,7 @@
 		E462BCFD2AC5340B00C9BA70 /* LogInViewViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E462BCFC2AC5340B00C9BA70 /* LogInViewViewModel.swift */; };
 		E462BCFF2AC5341C00C9BA70 /* RegisterViewViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E462BCFE2AC5341C00C9BA70 /* RegisterViewViewModel.swift */; };
 		E462BD012AC5343100C9BA70 /* ToDoListItemViewViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E462BD002AC5343100C9BA70 /* ToDoListItemViewViewModel.swift */; };
+		E4B0E5372AC54128008874F5 /* HeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4B0E5362AC54128008874F5 /* HeaderView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +55,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		E45CF7E92AC9ECAD00268AE6 /* TLButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TLButton.swift; sourceTree = "<group>"; };
 		E462BCA82AC4BE3C00C9BA70 /* ToDoListApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ToDoListApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E462BCAB2AC4BE3C00C9BA70 /* ToDoListAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoListAppApp.swift; sourceTree = "<group>"; };
 		E462BCAD2AC4BE3C00C9BA70 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
@@ -79,6 +82,7 @@
 		E462BCFC2AC5340B00C9BA70 /* LogInViewViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogInViewViewModel.swift; sourceTree = "<group>"; };
 		E462BCFE2AC5341C00C9BA70 /* RegisterViewViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewViewModel.swift; sourceTree = "<group>"; };
 		E462BD002AC5343100C9BA70 /* ToDoListItemViewViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoListItemViewViewModel.swift; sourceTree = "<group>"; };
+		E4B0E5362AC54128008874F5 /* HeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -176,6 +180,8 @@
 				E462BCEA2AC5331D00C9BA70 /* LogInView.swift */,
 				E462BCEC2AC5332700C9BA70 /* RegisterView.swift */,
 				E462BCEE2AC5335F00C9BA70 /* ToDoListItemView.swift */,
+				E4B0E5362AC54128008874F5 /* HeaderView.swift */,
+				E45CF7E92AC9ECAD00268AE6 /* TLButton.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -353,11 +359,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				E462BCEB2AC5331D00C9BA70 /* LogInView.swift in Sources */,
+				E4B0E5372AC54128008874F5 /* HeaderView.swift in Sources */,
 				E462BCEF2AC5335F00C9BA70 /* ToDoListItemView.swift in Sources */,
 				E462BCFF2AC5341C00C9BA70 /* RegisterViewViewModel.swift in Sources */,
 				E462BCF52AC533BE00C9BA70 /* MainViewViewModel.swift in Sources */,
 				E462BCAE2AC4BE3C00C9BA70 /* MainView.swift in Sources */,
 				E462BCE52AC532EF00C9BA70 /* ProfileView.swift in Sources */,
+				E45CF7EA2AC9ECAD00268AE6 /* TLButton.swift in Sources */,
 				E462BCF72AC533CE00C9BA70 /* ProfileViewViewModel.swift in Sources */,
 				E462BCED2AC5332700C9BA70 /* RegisterView.swift in Sources */,
 				E462BCF12AC5338400C9BA70 /* User.swift in Sources */,
