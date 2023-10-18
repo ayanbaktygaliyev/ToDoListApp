@@ -12,7 +12,7 @@ struct RegisterView: View {
     @State var name = ""
     @State var email = ""
     @State var password = ""
-    
+    @State var showView = false
     
     var body: some View {
         VStack{
@@ -21,27 +21,48 @@ struct RegisterView: View {
             
             Form {
                 TextField("Full Name", text: $name)
-                TextField("Email Address", text: $email)
-                SecureField("Password", text: $password)
+                    .textFieldStyle(DefaultTextFieldStyle())
+                    .autocorrectionDisabled()
                 
-                TLButton(title: "Create account", background: .green) {
+                TextField("Email Address", text: $email)
+                    .textFieldStyle(DefaultTextFieldStyle())
+                    .autocorrectionDisabled()
+                    .autocapitalization(.none)
+                
+                SecureField("Password", text: $password)
+                    .textFieldStyle(DefaultTextFieldStyle())
+                
+                TLButton(title: "Create account",
+                         background: .green
+                ) {
+                    print("create account button!")
                     //registration
                 }
             }
+            .offset(y: -100)
         }
-        .offset(y: -50)
         .padding()
+
         
         VStack {
             Text("Already have an account?")
             
-            NavigationLink("Log in", destination: LogInView())
-        }.padding(.bottom, 50)
+            NavigationLink("Log In", destination: LogInView())
+        }
+        .padding(.bottom, 50)
         
         Spacer()
     }
 }
 
+struct DescView: View {
+    @Binding var showView: Bool
+    var body: some View {
+        Button(action: {self.showView = false}){
+            Text("Pop Screen")
+        }
+    }
+}
 
 struct RegisterView_Previews: PreviewProvider {
     static var previews: some View {

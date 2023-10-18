@@ -24,9 +24,10 @@ struct TLButton: View {
                     .bold()
                     .foregroundColor(Color.white)
             }
+            .padding()
+
         }
-        .padding()
-    }
+            }
 }
 
 struct TLButton_Previews: PreviewProvider {
